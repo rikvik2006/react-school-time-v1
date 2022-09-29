@@ -1,0 +1,97 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --quiteBlack: #2a2e34;
+  --pink1: #FFEBF6;
+  --pink2: #FF83C7;
+  --fucsia: #D40859;
+  --purple: #7F01E8;
+  --blurple: #715DF2;
+  --blue: #337CF5;
+  --red: rgb(255, 0, 0, .40);
+  --gray0: #DFDFDF;
+  --gray1: rgb(0, 0, 0, .40);
+  --gray2: rgb(0, 0, 0, .64);
+  --gray4: #292E35;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+html {
+  color-scheme: light;
+}
+
+body {
+  color: black;
+  background: white;
+}
+
+.home_h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 3rem;
+  color: var(--gray4);
+
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home_p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: black;
+}
+
+.spacer {
+  aspect-ratio: 1920/271;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.layer {
+  background-image: url("/Footer.svg");
+}
+
+
+// @media (prefers-color-scheme: dark) {
+//   html {
+//     color-scheme: dark;
+//   }
+
+//   body {
+//     color: white;
+//     background: black;
+//   }
+// }
+
+// @media (prefers-color-scheme: light) {
+//   html {
+//     color-scheme: light;
+//   }
+
+//   body {
+//     color: black;
+//     background: white;
+//   }
+// }
