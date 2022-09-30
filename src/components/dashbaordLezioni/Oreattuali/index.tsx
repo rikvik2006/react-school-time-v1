@@ -1,19 +1,45 @@
 import React, { useState, useEffect } from 'react'
 import CursoreOra from './cursoreOra';
 import style from "./index.module.scss";
+import moment from 'moment';
 
 function OreLateterali() {
+    // const date = new Date;
+    // const [hours, setHours] = useState<number>(11)
+    // const [minute, setMinute] = useState<number>(11);
+    const [ora, setOra] = useState<string>();
 
-    const date = new Date;
+    // useEffect(() => {
+    //     console.log("In use effect")
+    //     const interval = setInterval(() => {
+    //         setHours(date.getHours());
+    //         setMinute(date.getMinutes());
 
-    const [hours, minute] = [date.getHours(), date.getMinutes()];
+    //     }, 1000)
 
-    console.log(`${hours}:${minute}`);
+    //     return () => clearInterval(interval)
+    // }, [])
+
+
+    // console.log(`${hours}:${minute}`);
+
+    useEffect(() => {
+        const getHour = moment().format("h:mm A");
+        setOra(getHour);
+
+        const interval = setInterval(() => {
+            const getNewHour = moment().format("h:mm A");
+            setOra(getNewHour);
+        }, 1000)
+
+
+    }, [])
+
 
     return (
         <>
             <div className={style.containerOre}>
-                <CursoreOra />
+                <CursoreOra ora={ora} />
                 <div></div>
                 <div className={style.containerOra}>
                     <div className={style.ore}>8:00 AM</div>
