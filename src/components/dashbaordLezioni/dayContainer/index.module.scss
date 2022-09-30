@@ -1,0 +1,24 @@
+.daysContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.dayContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .day {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-size: 1.5rem;
+        // margin-right: 1rem;
+    }
+
+    .nameDay {
+        // font-weight: 300;
+    }
+}
