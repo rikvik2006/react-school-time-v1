@@ -10,12 +10,6 @@ const NavBarComponent: FC<Props> = () => {
             <div className={style.logoContainer}>
                 <img src={"https://imgur.com/h7zNfez.png"} alt="logo" className={style.logo}></img>
             </div>
-
-            <div className={style.buttonContainer}>
-                <input type="button" value={"Sing up"} />
-
-                <input type="button" value={"Log in"} />
-            </div >
         </div >
     )
 }
