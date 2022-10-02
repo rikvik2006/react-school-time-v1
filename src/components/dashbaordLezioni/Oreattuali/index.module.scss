@@ -1,5 +1,6 @@
 .containerOre {
     display: grid;
+    position: relative;
     // flex-direction: column;
     // justify-content: space-between;
     // align-items: center;
@@ -12,5 +13,14 @@
         border-radius: 3px;
         color: var(--blue);
         box-shadow: 4px 4px 10px rgba(38, 33, 74, 0.250);
+    }
+
+    .containerOra {
+        display: flex;
+        justify-content: flex-start;
+
+        .ore {
+            padding: 0 5px;
+        }
     }
 }

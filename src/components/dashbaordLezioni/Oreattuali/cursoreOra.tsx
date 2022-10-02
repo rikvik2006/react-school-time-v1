@@ -3,9 +3,10 @@ import style from "./index.module.scss";
 
 type Props = {
     ora?: string;
+    ratio?: number;
 }
 
-const CursoreOra: FC<Props> = ({ ora }) => {
+const CursoreOra: FC<Props> = ({ ora, ratio }) => {
     // console.log(ora)
 
 
@@ -30,8 +31,10 @@ const CursoreOra: FC<Props> = ({ ora }) => {
     //     }, 1)
     // }, [])
 
+    console.log("--Ratio from componet--")
+    console.log(ratio);
     return (
-        <div className={style.cursoreOra}>{ora}</div>
+        <div className={style.cursoreOra} style={{ top: `${ratio}%` }}>{ora}</div>
     )
 }
 
