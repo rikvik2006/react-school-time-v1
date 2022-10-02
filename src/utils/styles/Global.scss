@@ -9,7 +9,10 @@
   --blurple: #715DF2;
   --blue: #337CF5;
   --red: rgb(255, 0, 0, .40);
+  --brown: #67362E;
   --gray0: #DFDFDF;
+  --grayD: #A5A5A5;
+  --grayD2: rgb(136, 136, 136);
   --gray1: rgb(0, 0, 0, .40);
   --gray2: rgb(0, 0, 0, .64);
   --gray4: #292E35;
@@ -71,6 +74,15 @@ body {
 
 .layer {
   background-image: url("/Footer.svg");
+}
+
+.hr {
+  color: var(--grayD);
+  width: 100%;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
 }
 
 
