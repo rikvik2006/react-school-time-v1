@@ -41,12 +41,6 @@ const DayContainer: FC = () => {
                     <div className={style.day}>6</div>
                 </div>
             </div>
-            <div className={style.dayContainer}>
-                <div className={style.subDayContainer}>
-                    <div className={style.nameDay}>Dom</div>
-                    <div className={style.day}>7</div>
-                </div>
-            </div>
         </>
         // </div>
     )
